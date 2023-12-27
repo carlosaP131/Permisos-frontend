@@ -5,13 +5,13 @@ import { MatIconModule } from '@angular/material/icon';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-menu',
+  selector: 'app-admin-menu',
   standalone: true,
   imports: [MatListModule,MatIconModule,NgbCollapseModule],
-  templateUrl: './menu.component.html',
-  styleUrl: './menu.component.css'
+  templateUrl: './admin-menu.component.html',
+  styleUrl: './admin-menu.component.css'
 })
-export class MenuComponent {
+export class AdminMenuComponent {
   public isCollapsed = true;
   constructor(public snackBar: MatSnackBar) {
 
@@ -19,6 +19,4 @@ export class MenuComponent {
 
   ngOnInit(): void {
   }
-
- 
 }
