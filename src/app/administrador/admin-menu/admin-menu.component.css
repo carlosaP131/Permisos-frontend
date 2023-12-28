@@ -1,6 +1,6 @@
 
 .global-menu {
-  background-color: #860400;
+  width: 100%;
 }
 
 
@@ -42,7 +42,7 @@
   border-radius: 5px;
   transition: width 2s;
   -webkit-transition: width 2s;
-  color: #1f2735;
+  color: #fc7f7f;
 }
 
 .item-sub-menu:hover {
