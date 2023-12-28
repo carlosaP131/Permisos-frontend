@@ -1,9 +1,16 @@
-<!--<button mat-icon-button (click)="showMenu = !showMenu">
-  <mat-icon>menu</mat-icon>
-</button>
+<div class="search-container">
+  <label for="search">Buscar:</label>
+  <input type="text" id="search" name="search">
 
-<app-menu *ngIf="showMenu"></app-menu>
--->
+  <label for="filter">Filtrar por:</label>
+  <select id="filter" name="filter">
+    <!-- Opciones del combobox -->
+    <option value="carrera">Carrera</option>
+    <option value="grupo">Grupo</option>
+    <option value="secretaria">Secretaria</option>
+  </select>
+</div>
+
 <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
 
   <!-- Folio Column -->
