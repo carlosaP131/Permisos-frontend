@@ -1,1 +1,26 @@
-<p>administrador works!</p>
+<div class="admin" fxLayout="column">
+  <!-- Header -->
+  <div class="header">
+    <button mat-icon-button (click)="toggleMenu()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <!-- Contenedor Izquierdo -->
+    <div class="container-left" *ngIf="showMenu">
+      <app-admin-menu></app-admin-menu>
+    </div>
+
+    <!-- Contenedor Derecho -->
+    <div class="container-right">
+      <app-admin-permiso></app-admin-permiso>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <h3>Pie de página</h3>
+  </div>
+</div>
