@@ -1,0 +1,49 @@
+/* Estilos generales */
+.admin {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #3498db;
+  color: white;
+}
+
+.main {
+  flex: 1;
+  position: relative;
+  /* Añadido para contener los elementos absolutos dentro de .main */
+}
+
+/* Estilos para .container-left */
+.container-left {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  transition: opacity 1s ease-in-out;
+  /* Para colocarlo encima del contenido principal */
+  display: flex;
+  flex-direction: column;
+  /*width: 50%;
+  /* Se ajustó el ancho al 50% */
+  width: 50%;
+  max-width: 300px;
+  background-color: #860400;
+  color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Estilos para .container-right */
+.container-right {
+  flex: 1;
+  background-color: #e74c3c;
+  color: white;
+  width: 100%;
+}
+
+
+/* Estilos para .footer */
+.footer {
+  background-color: #34495e;
+  color: white;
+}
